@@ -1,2 +1,2 @@
-# C-
+# C++
 Conteudos em linguagem C++
