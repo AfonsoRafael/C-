@@ -1,0 +1,65 @@
+//Curso de C++ #19 - Array bidimensional / Matriz
+//MATRIZ SÃO ARRYS BIDIMENCIONAIS
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+int main(){
+	int matriz[3][4];
+	int l,c;
+	
+	matriz[0][0]=0;
+	matriz[0][1]=0;
+	matriz[0][2]=0;
+	matriz[0][3]=0;
+	
+	matriz[1][0]=1;
+	matriz[1][1]=1;
+	matriz[1][2]=1;
+	matriz[1][3]=1;
+	
+	matriz[2][0]=2;
+	matriz[2][1]=2;
+	matriz[2][2]=2;
+	matriz[2][3]=2;
+	
+	for(l=0;l<3;l++){
+		for (c=0;c<4;c++){
+		cout<< matriz[l][c]<<"  ";
+	}
+	cout<<"\n";
+	}
+	cout<<"\n\n\n\n";
+	
+		for(l=0;l<3;l++){//FAZ O PREENCHIMENTO AUTOMATICO DA TABELA
+		for (c=0;c<4;c++){
+		matriz[l][c]=c;
+	}
+
+	}
+	
+		for(l=0;l<3;l++){
+		for (c=0;c<4;c++){
+		cout<< matriz[l][c]<<"  ";
+	}
+	cout<<"\n";
+	}
+		cout<<"\n\n\n\n";
+	
+		for(l=0;l<3;l++){//VOCE FAZ O PREENCHIMENTO DA TABELA
+		for (c=0;c<4;c++){
+		cin>>matriz[l][c];
+	}
+	system("cls");
+	}
+	
+		for(l=0;l<3;l++){
+		for (c=0;c<4;c++){
+		cout<< matriz[l][c]<<"  ";
+	}
+	cout<<"\n";
+	}
+	
+
+	
+	return 0;
+}
